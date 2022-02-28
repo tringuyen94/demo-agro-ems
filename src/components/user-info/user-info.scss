@@ -1,0 +1,17 @@
+@use "../../scss/abstracts/" as *;
+
+.user-info {
+   @include flex(center, center);
+   &__name {
+      @include tablet {
+         padding: 0 $mobileSpacing;
+      }
+       p{
+         padding: 0 $spacing;
+         width: max-content;
+         font-size: $fontSizeMedium;
+         font-weight: 700;
+         color: $mainBg;
+      }
+   }
+}
