@@ -15,5 +15,5 @@ app.use(express.json())
 app.use('/api', routes)
 
 
-const PORT = process.env.PORT || 8800
+const PORT = 8800
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))
