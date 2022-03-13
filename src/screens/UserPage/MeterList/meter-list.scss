@@ -1,0 +1,36 @@
+.location-list {
+   .location-list-filter {
+      justify-content: center;
+      align-items: center;
+      .location-info {
+         justify-content: center;
+      }
+      .location-search {
+         display: flex;
+         align-items: center;
+      }
+   }
+   .location-list-wrapper {
+      margin-top: 2rem;
+      .location-item {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 20px;
+         cursor: pointer;
+         transition: all 0.25s ease;
+         &:hover {
+            transform: scale(1.15);
+         }
+         &__icon {
+            img {
+               width: 130px;
+            }
+         }
+         &__name {
+            font-weight: bold;
+         }
+      }
+   }
+}

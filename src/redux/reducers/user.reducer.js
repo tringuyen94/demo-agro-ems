@@ -12,6 +12,7 @@ const UserReducer = (state = initialState, actions) => {
          return { ...state }
       case LOGOUT:
          state.profile = null
+         localStorage.removeItem('profile')
          return { ...state }
       default:
          return state

@@ -1,9 +1,18 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 @mixin flex($alignItem: center, $justifyContent: center) {
     display: flex;
     align-items: $alignItem;
     justify-content: $justifyContent;
+}
+
+@mixin customButton {
+    color: white;
+    background-color: $mainBg !important;
+    &:hover {
+        background-color: $mainBg;
+        color: $orange;
+    }
 }
 
 @mixin mobile {
